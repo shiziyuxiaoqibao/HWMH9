@@ -1,0 +1,293 @@
+##############################################
+##########				ISR 0:func._int_fun0
+##############################################
+endfun2:func._int_fun0
+
+
+##############################################
+##########				MAIN:func._main
+##############################################
+
+
+###########Call  function :func._Init_MCU
+
+
+###########Call  function :func._Init_Touch_GPIO
+###########Return function:func._Init_Touch_GPIO
+
+
+
+###########Call  function :func._Init_Touch
+###########Return function:func._Init_Touch
+
+	*find		STK00		in 	func._Init_MCU
+
+
+###########Call  function :func._delay_ms
+###########Return function:func._delay_ms
+
+###########Return function:func._Init_MCU
+
+
+
+###########Call  function :func.__CTouch_Key_Init_
+
+
+###########Call  function :func.__Parameter_Init_
+
+
+###########Call  function :func.__R2PCL
+###########Return function:not find ->
+
+###########Return function:func.__Parameter_Init_
+
+
+
+###########Call  function :func.__mulchar
+	*find		STK01		in 	func.__mulchar
+###########Return function:func.__mulchar
+
+
+
+###########Call  function :func.__CTouch_Scan_Channel_RawData_
+###########Return function:func.__CTouch_Scan_Channel_RawData_
+
+	*find		STK04		in 	func.__CTouch_Key_Init_
+
+
+###########Call  function :func._Median_Value
+###########Return function:func._Median_Value
+
+
+
+###########Call  function :func._IIR_Filter
+###########Return function:func._IIR_Filter
+
+
+
+###########Call  function :func.__SCS_UpdateBaselines
+###########Return function:func.__SCS_UpdateBaselines
+
+###########Return function:func.__CTouch_Key_Init_
+
+
+
+###########Call  function :func._P0_INT_init
+###########Return function:func._P0_INT_init
+
+
+
+###########Call  function :func._timer_init
+
+
+###########Call  function :func._Timer1_Init
+###########Return function:func._Timer1_Init
+
+
+
+###########Call  function :func._Timer0_Init
+###########Return function:func._Timer0_Init
+
+###########Return function:func._timer_init
+
+
+
+###########Call  function :func._key_init
+###########Return function:func._key_init
+
+
+
+###########Call  function :func._ADC_Init
+###########Return function:func._ADC_Init
+
+
+
+###########Call  function :func._DoorState_Init
+###########Return function:func._DoorState_Init
+
+
+
+###########Call  function :func._FLASH_Init
+
+
+###########Call  function :func._FLASH_READ_ONE
+###########Return function:func._FLASH_READ_ONE
+
+
+
+###########Call  function :func._set_led
+###########Return function:func._set_led
+
+
+
+###########Call  function :func._key_state_set
+###########Return function:func._key_state_set
+
+
+
+###########Call  function :func._FLASH_WRITE_FUN
+###########Return function:func._FLASH_WRITE_FUN
+
+###########Return function:func._FLASH_Init
+
+
+
+###########Call  function :func._BAT_StateGet
+
+
+###########Call  function :func._Adc_read
+
+
+###########Call  function :func._Adc_fun
+###########Return function:func._Adc_fun
+
+###########Return function:func._Adc_read
+
+###########Return function:func._BAT_StateGet
+
+
+
+###########Call  function :func._DoorState_Deal
+
+
+###########Call  function :func._get_pwmduty
+
+
+###########Call  function :func._pwm_deal
+
+
+###########Call  function :func.__mulint
+###########Return function:func.__mulint
+
+
+
+###########Call  function :func.__divuint
+	*find		STK05		in 	func.__divuint
+	*find		STK06		in 	func.__divuint
+###########Return function:func.__divuint
+
+###########Return function:func._pwm_deal
+
+###########Return function:func._get_pwmduty
+
+###########Return function:func._DoorState_Deal
+
+
+
+###########Call  function :func._key_deal
+
+
+###########Call  function :func._key_read
+
+
+###########Call  function :func.__CTouch_Scan_Process_
+
+
+###########Call  function :func.__SCS_Calculate_Channel_Steady_Change
+###########Return function:func.__SCS_Calculate_Channel_Steady_Change
+
+
+
+###########Call  function :func.__SCS_Get_Key_Cnt
+###########Return function:func.__SCS_Get_Key_Cnt
+
+
+
+###########Call  function :func.__SCS_Is_Multi_Channel_Up_Change
+###########Return function:func.__SCS_Is_Multi_Channel_Up_Change
+
+
+
+###########Call  function :func.__SCS_Protect_Mode_UpdateBaselines
+###########Return function:func.__SCS_Protect_Mode_UpdateBaselines
+
+
+
+###########Call  function :func.__SCS_Prees_On_Mode_UpdateBaselines
+###########Return function:func.__SCS_Prees_On_Mode_UpdateBaselines
+
+###########Return function:func.__CTouch_Scan_Process_
+
+###########Return function:func._key_read
+
+
+
+###########Call  function :func._Door_StatusGet
+###########Return function:func._Door_StatusGet
+
+
+
+###########Call  function :func._Flash_data_set
+
+
+###########Call  function :func._set_savefalg
+###########Return function:func._set_savefalg
+
+###########Return function:func._Flash_data_set
+
+###########Return function:func._key_deal
+
+
+
+###########Call  function :func._led_deal
+
+
+###########Call  function :func._Clock_ClearSysLEDTimeStatus
+###########Return function:func._Clock_ClearSysLEDTimeStatus
+
+
+
+###########Call  function :func._Clock_GetSysLEDTimeStatus
+###########Return function:func._Clock_GetSysLEDTimeStatus
+
+
+
+###########Call  function :func._set_PWM1L
+
+
+###########Call  function :func.___uchar2fs
+
+
+###########Call  function :func.___ulong2fs
+###########Return function:func.___ulong2fs
+
+###########Return function:func.___uchar2fs
+
+
+
+###########Call  function :func.___fsmul
+	*find		STK09		in 	func.___fsmul
+	*find		STK10		in 	func.___fsmul
+
+
+###########Call  function :func.__mullong
+###########Return function:func.__mullong
+
+###########Return function:func.___fsmul
+
+
+
+###########Call  function :func.___fs2uchar
+
+
+###########Call  function :func.___fs2ulong
+###########Return function:func.___fs2ulong
+
+###########Return function:func.___fs2uchar
+
+###########Return function:func._set_PWM1L
+
+
+
+###########Call  function :func._set_PWM2L
+###########Return function:func._set_PWM2L
+
+###########Return function:func._led_deal
+
+
+
+###########Call  function :func._FLASH_Deal
+###########Return function:func._FLASH_Deal
+
+###########Return function:func._main
+

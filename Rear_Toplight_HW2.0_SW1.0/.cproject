@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.sdcc.exe.release.316374282">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.sdcc.exe.release.316374282" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="hex" artifactName="${ProjName}" buildProperties="" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.sdcc.exe.release.316374282" name="Release" parent="cdt.managedbuild.config.sdcc.exe.release">
+					<folderInfo id="cdt.managedbuild.config.sdcc.exe.release.316374282." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.sdcc.exe.release.2116438262" name="ChipON Tool Chain" superClass="cdt.managedbuild.toolchain.sdcc.exe.release">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.sdcc.platform.exe.release.1764912179" name="Release Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="cdt.managedbuild.target.sdcc.platform.exe.release"/>
+							<builder buildPath="${workspace_loc:/KF8A100_Touch_V0.1/Release}" id="cdt.managedbuild.target.sdcc.builder.exe.release.1122709039" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="ChipON Builder" superClass="cdt.managedbuild.target.sdcc.builder.exe.release"/>
+							<tool id="cdt.managedbuild.tool.sdcc.c.compiler.exe.release.971648380" name="C Compiler" superClass="cdt.managedbuild.tool.sdcc.c.compiler.exe.release">
+								<option id="com.chipon.chiponide.core.option.std.1787196419" name="语言标准" superClass="com.chipon.chiponide.core.option.std" value="com.chipon.chiponide.core.option.std.c89default" valueType="enumerated"/>
+								<option id="com.chipon.chiponide.core.option.array_opt.1886191603" superClass="com.chipon.chiponide.core.option.array_opt" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.sdcc.c.compiler.input.503524633" superClass="cdt.managedbuild.tool.sdcc.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.sdcc.c.linker.exe.release.1072693789" name="C Project Linker Release" superClass="cdt.managedbuild.tool.sdcc.c.linker.exe.release">
+								<option id="com.chipon.chiponide.core.option1.583268234" name="库文件" superClass="com.chipon.chiponide.core.option1" value="${CHIP_KERNEL_LIB} ${CHIP_TYPE_LIB} ${CHIP_TOUCH_LIB} ../kf8a100_touch_driver.o" valueType="string"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.sdcc.assembler.exe.release.610657922" name="KungFu8 Assembler Release" superClass="cdt.managedbuild.tool.sdcc.assembler.exe.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1290439043" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.sdcc.exe.debug.1821015951">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.sdcc.exe.debug.1821015951" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="hex" artifactName="${ProjName}" buildProperties="" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.sdcc.exe.debug.1821015951" name="Debug" parent="cdt.managedbuild.config.sdcc.exe.debug" postbuildStep="kf8exec_debug.exe ${ProjName}">
+					<folderInfo id="cdt.managedbuild.config.sdcc.exe.debug.1821015951." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.sdcc.exe.debug.607724880" name="ChipON Tool Chain" superClass="cdt.managedbuild.toolchain.sdcc.exe.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.sdcc.platform.exe.debug.162713473" name="Debug Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="cdt.managedbuild.target.sdcc.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/KF8A100_Touch_V0.1/Debug}" id="cdt.managedbuild.target.sdcc.builder.exe.debug.684204626" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="ChipON Builder" superClass="cdt.managedbuild.target.sdcc.builder.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.sdcc.c.compiler.exe.debug.197888607" name="C Compiler Debug" superClass="cdt.managedbuild.tool.sdcc.c.compiler.exe.debug">
+								<inputType id="cdt.managedbuild.tool.sdcc.c.compiler.input.214613864" superClass="cdt.managedbuild.tool.sdcc.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.sdcc.c.linker.exe.debug.1036744580" name="C Linker Debug" superClass="cdt.managedbuild.tool.sdcc.c.linker.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.sdcc.assembler.exe.debug.1016498666" name="KungFu8 Assembler Debug" superClass="cdt.managedbuild.tool.sdcc.assembler.exe.debug">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.178548179" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="KF8A100_Touch_V0.1.com.chipon.chiponide.core.projectType.c.992628230" name="KF8-c" projectType="com.chipon.chiponide.core.projectType.c"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/KF8A100_Touch_V1.0C_Lib"/>
+	</storageModule>
+</cproject>

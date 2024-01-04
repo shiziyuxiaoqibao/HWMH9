@@ -1,0 +1,85 @@
+//########### More See(like "C:\ChipONCC\examples") file isr_push_stk_fun.h & isr_push_stk_fun.c
+ 
+//!!!!!! In Interrupt course,It is adviced to no use function with  parameter, otherwise you need  protect them by code
+//!!!!!! protect parameter will need ram resouce and code,so the speed of interrupt will become slow
+//!!!!!! protect code can be placed appropriate,so some interrupt can quickly enter and exit
+
+//!!!!!! only adapt to compiled language which use commonality STK00~STK12 to denote parameter and return
+
+//##################################  examples contex  "isr_push_stk_fun.h"
+//!!!!!! No support call same function in interrup and main,unless you can sure it's separate absolute under time(funciton iterative nosupport)
+//1¡¢creat var to save the parameter
+//  
+
+#ifndef  ISR_PUSH_STK_FUN_H
+#define  ISR_PUSH_STK_FUN_H
+
+void  H_ISR_PUSH_STK();
+void  H_ISR_POP_STK();
+
+void  L_ISR_PUSH_STK();
+void  L_ISR_POP_STK();
+
+#define  H_STKSAVECOUNT	12
+#define  L_STKSAVECOUNT	12// here use 12
+extern volatile unsigned char   H_STKBUFFED[H_STKSAVECOUNT];
+extern volatile unsigned char   L_STKBUFFED[L_STKSAVECOUNT];
+#endif
+
+//##################################  examples contex  "isr_push_stk_fun.c"
+#include "isr_push_stk_fun.h"
+
+volatile unsigned char   H_STKBUFFED[H_STKSAVECOUNT];//  C to inline Asm define var globe ,and use with prefix"_"
+volatile unsigned char   L_STKBUFFED[L_STKSAVECOUNT];
+
+//2¡¢enter and save
+void  H_ISR_PUSH_STK()
+{
+	__asm
+
+	.define  usebuffed_Pu_		H_STKBUFFED
+	.if H_STKSAVECOUNT>0
+		BANKSEL  STK00
+		MOV R0,STK00
+		BANKSEL  usebuffed_Pu
+		MOV usebuffed_Pu+0,R0
+	.endif
+
+	.if H_STKSAVECOUNT>1
+		.....
+
+
+	__endasm;
+
+}
+void  L_ISR_PUSH_STK()
+{
+	__asm
+	....
+	__endasm;
+}
+//3¡¢exit and resave
+
+void  H_ISR_POP_STK()
+{
+	__asm
+	.define  usebuffed_Po_		H_STKBUFFED
+	.if H_STKSAVECOUNT>0
+		BANKSEL  usebuffed_Po
+		MOV R0,usebuffed_Po+0
+		BANKSEL  STK00
+		MOV STK00,R0
+	.endif
+
+	.if H_STKSAVECOUNT>1
+	.....
+
+	__endasm;
+}
+void  L_ISR_POP_STK()
+{
+	__asm
+	....
+	__endasm;
+}
+
